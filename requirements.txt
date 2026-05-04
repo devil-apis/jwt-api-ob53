@@ -1,8 +1,7 @@
-{
-  "builds": [
-    { "src": "api/index.py", "use": "@vercel/python" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "api/index.py" }
-  ]
-}
+flask
+flask-cors
+requests
+pycryptodome
+pyjwt
+protobuf
+urllib3
