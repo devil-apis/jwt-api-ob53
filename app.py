@@ -427,5 +427,9 @@ def eat_endpoint():
     return jsonify(result), status_code
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=1080, debug=False)
+app = Flask(__name__)
+CORS(app)
+
+# REMOVE THIS ENTIRE BLOCK:
+# if __name__ == '__main__':
+#     app.run(...)
